@@ -3615,3 +3615,18 @@ section.travel a {
 
 section.travel a:hover {
   color: #F58549; }
+
+section.resources .track-resources{
+  margin-left: 30px;
+}
+
+section.resources h1{
+  text-decoration: underline;
+  color: #F58549;
+  font-size: 35px;
+}
+
+section.resources h2{
+  font-size: 20px;
+  margin-left: 30px;
+}
