@@ -50,7 +50,7 @@ function nav(selected){
     }
     selected.className += " active";
 
-    var navigationViews = ["home", "map", "hardware", "resources", "travel"] //, "judging"
+    var navigationViews = ["home", "map", "hardware", "resources", "travel", "workshops"] //, "judging"
     
     $('.page-title')[0].innerText = selected.innerText
 
