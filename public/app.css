@@ -3082,7 +3082,7 @@ footer {
     color: #F58549; }
 
 /******************************************************
-	MEDIA QUERIES
+  MEDIA QUERIES
 *******************************************************/
 @keyframes live {
   0% {
@@ -3421,8 +3421,8 @@ section.info a:hover {
 
 section.info .social {
   /*
-    	ERASE THIS
-    	 */
+      ERASE THIS
+       */
   padding-top: 50px;
   margin-bottom: 0;
   border-bottom-left: 4px;
@@ -3723,3 +3723,59 @@ section.resources h2{
   font-size: 20px;
   margin-left: 30px;
 }
+
+section.workshops h1, section.workshops h2, section.workshops h3, section.workshops h4, section.workshops p {
+  padding: 0;
+  margin: 0; }
+
+section.workshops .spacer {
+  height: 30px; }
+
+section.workshops .info > div {
+  max-width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px; }
+
+section.workshops .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #F58549;
+  cursor: pointer;
+  height: 30px; }
+
+section.workshops .title:hover {
+  background-color: #F58549;
+  color: #ffffff; }
+
+section.workshops .text {
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10;
+  -webkit-transition: height 0.2s ease;
+  -moz-transition: height 0.2s ease;
+  -o-transition: height 0.2s ease;
+  -ms-transition: height 0.2s ease;
+  transition: height 0.2s ease; }
+
+section.workshops .text-wrapper {
+  margin: 0 auto;
+  width: 50%; }
+
+section.workshops .grey-background > div {
+  max-width: 50%;
+  min-width: 350px;
+  margin: 0 auto; }
+
+.workshops .active .title {
+  background-color: #F58549;
+  color: #ffffff; }
+
+.workshops .active .text {
+  height: 520px;
+  padding: 10px;
+  border: 2px solid #F58549;
+  border-top: 0px;
+  border-bottom-width: 1px; }
