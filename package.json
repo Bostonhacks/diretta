@@ -1,24 +1,23 @@
 {
   "name": "bostonhacks-live",
   "version": "1.0.0",
-  "description": "",
+  "description": "Live site at live.bostonhacks.io",
   "main": "server.js",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "mongodb": "^2.2.33"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bostonhacks/Live.git"
   },
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bostonhacks/Live/issues"
   },
