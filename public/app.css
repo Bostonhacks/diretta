@@ -3722,6 +3722,21 @@ section.resources h1{
 section.resources h2{
   font-size: 20px;
   margin-left: 30px;
+  margin-top: 40px;
+}
+
+section.resources h3{
+  font-size: 15px;
+  margin-left: 45px;
+  margin-top: -5px;
+  color: white;
+}
+
+section.resources a{
+   color: #EADFD8; }
+   
+section.resources a:hover {
+  color: #F58549;
 }
 
 section.puzzles .puzzles-list{
@@ -3743,6 +3758,13 @@ section.puzzles h2{
 section.puzzles h3{
   font-size: 15px;
   margin-left: 30px;
+}
+
+section.puzzles a{
+   color: #EADFD8; }
+   
+section.puzzles a:hover {
+  color: #F58549;
 }
 
 section.workshops h1, section.workshops h2, section.workshops h3, section.workshops h4, section.workshops p {
