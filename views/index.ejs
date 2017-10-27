@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+<script src="/socket.io/socket.io.js"></script>
 <script>
     var socket = io().connect('http://localhost:8080'); 
     socket.on('connection', function (data) {
@@ -8,6 +9,7 @@
         socket.emit('my other event');
     });
 </script>
+
 <% include partials/head %>
 
 <body>
@@ -45,6 +47,10 @@
 
     <section class="puzzles" style="display: none">
         <% include partials/puzzles %>
+
+    <section class="ouija" style="display: none">
+        <% include partials/ouija %>
+
     </section>
 
 </body>
