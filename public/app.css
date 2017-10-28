@@ -3503,7 +3503,20 @@ section.map .floors img {
 section.map .mapkey {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+  section.map h2 {
+  margin-bottom: 0px; }
+
+  section.map h3 {
+  margin-top: -5px; 
+  margin-left: 40px;
+
+}
 
 section.prizes .grey-background h1, section.prizes .grey-background h2, section.prizes .grey-background h3, section.prizes .grey-background h4, section.prizes .grey-background p {
   padding: 0;
