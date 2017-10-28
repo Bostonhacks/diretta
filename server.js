@@ -20,9 +20,6 @@ app.get('/', function (req, res) {
 
 io.on('connection', function(socket){
   console.log('a user connected');
-  // socket.on('connection', function(){
-  // 	console.log("Hello world!");
-  // });
 });
 
 http.listen(8080, function(){
