@@ -52,7 +52,7 @@ function nav(selected){
     }
     selected.className += " active";
 
-    var navigationViews = ["home", "map", "hardware", "resources", "travel", "workshops", "schedule", "puzzles", "ouija"] //, "judging"
+    var navigationViews = ["home", "map", "hardware", "resources", "travel", "workshops", "schedule", "puzzles"] //, "ouija", "judging"
  
     $('.page-title')[0].innerText = selected.innerText
 
