@@ -3622,8 +3622,51 @@ section.schedule .event-time{
 
 section.schedule .event-line{
 	height:6px;
-	background:#F58549;
+	background:#913808;
 	border-radius:50px;
+}
+
+section.schedule .food-line{
+  height:6px;
+  background:#da540b;
+  border-radius:50px;
+}
+
+section.schedule .workshop-line{
+  height:6px;
+  background:#F58549;
+  border-radius:50px;
+}
+
+section.schedule .onetimeevent{
+  width:6px;
+}
+
+section.schedule .halfhrevent{
+  width:47.5px;
+}
+
+section.schedule .onehrevent{
+  width:95px;
+}
+
+section.schedule .twohrevent{
+  width:190px;
+}
+
+section.ouija .canvas{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#follower{
+  position : absolute;
+  background-color : red;
+  color : white;
+  padding : 10px;
 }
 
 ::-webkit-scrollbar {
