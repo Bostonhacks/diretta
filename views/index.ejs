@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.jsx"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io().connect('http://localhost:8080'); 
+    socket.on('connection', function (data) {
+        console.log('connected');
+        socket.emit('my other event');
+    });
+</script>
 
 <% include partials/head %>
 
@@ -27,10 +36,22 @@
     <section class="travel" style="display: none">
         <% include partials/travel %>
     </section>
+	
+	<section class="schedule" style="display: none">
+        <% include partials/schedule %>
+    </section>
 
     <section class="workshops" style="display: none">
         <% include partials/workshops %>
     </section>
+
+    <section class="puzzles" style="display: none">
+        <% include partials/puzzles %>
+    </section>
+<!--
+    <section class="ouija" style="display: none">
+        <% include partials/ouija %>
+    </section> -->
 
 </body>
 

@@ -1,4 +1,6 @@
 var collapsed = true;
+
+
 function $(query){
     return document.querySelectorAll(query);
 }
@@ -50,8 +52,8 @@ function nav(selected){
     }
     selected.className += " active";
 
-    var navigationViews = ["home", "map", "hardware", "resources", "travel", "workshops"] //, "judging"
-    
+    var navigationViews = ["home", "map", "hardware", "resources", "travel", "workshops", "schedule", "puzzles"] //, "ouija", "judging"
+ 
     $('.page-title')[0].innerText = selected.innerText
 
     for (var i = 0; i < navigationViews.length; i++) {

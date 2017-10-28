@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/bostonhacks-live
+    docker:
+      - image: circleci/node:7
+      - image: mongo:3.4.4
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - deploy:
+          name: deploy-bostonhacks-live-prod
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-live/public circleci@${BOSTONHACKS_IP_ADDR}:/var/www/live/
+              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-live/views circleci@${BOSTONHACKS_IP_ADDR}:/var/www/live/
+              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-live/server.js circleci@${BOSTONHACKS_IP_ADDR}:/var/www/live/
+              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-live/package.json circleci@${BOSTONHACKS_IP_ADDR}:/var/www/live/
+              cat ~/bostonhacks-live/scripts/restart.sh | ssh -o StrictHostKeyChecking=no -tt circleci@${BOSTONHACKS_IP_ADDR}
+            fi
